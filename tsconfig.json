@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.base.json",
+  "include": [],
+  "references": [
+    {
+      "path": "packages/plugin"
+    },
+    {
+      "path": "packages/core"
+    },
+    {
+      "path": "packages/cli"
+    },
+    {
+      "path": "packages/plugin-linecount"
+    },
+    {
+      "path": "packages/renderer-csv"
+    }
+  ]
+}

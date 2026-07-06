@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "include": [
+    "test"
+  ],
+  "references": [
+    {
+      "path": "tsconfig.src.json"
+    },
+    {
+      "path": "../core/tsconfig.src.json"
+    },
+    {
+      "path": "../renderer-csv/tsconfig.src.json"
+    }
+  ],
+  "compilerOptions": {
+    "tsBuildInfoFile": ".tsbuildinfo/test.tsbuildinfo",
+    "rootDir": "test",
+    "noEmit": true,
+    "exactOptionalPropertyTypes": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.17.1",
+  "scripts": {
+    "build": "tsc -b tsconfig.build.json",
+    "check": "tsc -b tsconfig.json",
+    "test": "vitest",
+    "lint": "eslint \"**/{src,test}/**/*.{ts,mjs}\"",
+    "clean": "node scripts/clean.mjs"
+  },
+  "devDependencies": {
+    "@effect/eslint-plugin": "^0.3.2",
+    "@effect/language-service": "^0.23.3",
+    "@effect/vitest": "^0.29.0",
+    "@eslint/js": "^9.26.0",
+    "eslint": "^9.26.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.1",
+    "vitest": "^3.2.4"
+  }
+}

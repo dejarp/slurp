@@ -1,0 +1,36 @@
+{
+  "name": "@slurp/renderer-csv",
+  "version": "0.1.0",
+  "type": "module",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "development": "./src/index.ts",
+      "import": "./build/esm/index.js",
+      "default": "./build/esm/index.js"
+    },
+    "./*": {
+      "development": "./src/*.ts",
+      "import": "./build/esm/*.js",
+      "default": "./build/esm/*.js"
+    },
+    "./internal/*": null
+  },
+  "scripts": {
+    "check": "tsc -b tsconfig.json",
+    "test": "vitest",
+    "build": "tsc -b tsconfig.build.json"
+  },
+  "peerDependencies": {
+    "@effect/platform": "^0.96.2",
+    "@slurp/core": "workspace:^",
+    "effect": "^3.21.4",
+    "@effect/platform-node": "^0.107.0"
+  },
+  "devDependencies": {
+    "@effect/platform": "^0.96.2",
+    "@slurp/core": "workspace:^",
+    "effect": "^3.21.4",
+    "@effect/platform-node": "^0.107.0"
+  }
+}

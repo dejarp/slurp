@@ -1,0 +1,50 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "exactOptionalPropertyTypes": true,
+    "moduleDetection": "force",
+    "composite": true,
+    "downlevelIteration": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": false,
+    "declaration": true,
+    "skipLibCheck": true,
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "types": [],
+    "isolatedModules": true,
+    "sourceMap": true,
+    "declarationMap": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "noFallthroughCasesInSwitch": true,
+    "noEmitOnError": false,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "target": "ES2022",
+    "module": "NodeNext",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "@effect/language-service",
+        "namespaceImportPackages": [
+          "effect",
+          "@effect/cli",
+          "@effect/platform",
+          "@effect/platform-node",
+          "@effect/platform-node-shared",
+          "@effect/vitest"
+        ]
+      }
+    ],
+    "customConditions": [
+      "development"
+    ]
+  }
+}
